@@ -1,4 +1,5 @@
 import './App.css';
+import TopGarageInfo from '../TopGarageInfo/topGarageInfo';
 import NavBar from '../NavBar/navBar';
 import Header from '../Header/header';
 import HeaderAside from '../HeaderAside/headerAside';
@@ -8,6 +9,7 @@ import Footer from '../Footer/footer';
 function App() {
   return (
     <div className="App">
+      <TopGarageInfo />
       <NavBar />
       <Header />
       <HeaderAside />
