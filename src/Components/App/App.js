@@ -9,7 +9,6 @@ import Footer from '../Footer/footer';
 function App() {
   return (
     <div className="App">
-      <TopGarageInfo />
       <NavBar />
       <Header />
       <HeaderAside />
