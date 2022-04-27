@@ -4,6 +4,8 @@ import NavBar from '../NavBar/navBar';
 import Header from '../Header/header';
 import HeaderAside from '../HeaderAside/headerAside';
 import SectionServices from '../SectionServices/sectionServices';
+import AboutUs from '../AboutUs/aboutUs';
+import ContactUs from '../ContactUs/contactUs';
 import Footer from '../Footer/footer';
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <Header />
       <HeaderAside />
       <SectionServices />
+      <AboutUs />
+      <ContactUs />
       <Footer />
     </div>
   );
