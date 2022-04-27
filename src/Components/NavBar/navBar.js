@@ -4,11 +4,10 @@ import './navBar.css'
 
 function NavBar() {
     return (
-        <div className="container">
-            <div className="row">
+        <div className="row">
                 {/* Top Menu */}
-                <div className="col col-lg-12 col-md-9">
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+                {/* col-lg-12 col-md-9 */}
+                    <nav className="bg-primary navbar navbar-expand-lg navbar-light shadow-sm">
                         <div className="container">
                             <a className="navbar-brand fw-bold" href="#page-top">Atomic Garage</a>
                         </div>
@@ -28,10 +27,25 @@ function NavBar() {
                                 </li>
                             </ul>
                         </div>
+                        {/* Burger menu */}
+                        <div className="burger d-lg-none">
+                            <div id="webapp_cover" data-toggle="collapse" 
+                                            data-target="#navbarSupportedContent" 
+                                            aria-controls="navbarSupportedContent" 
+                                            aria-expanded="false" 
+                                            aria-label="Toggle navigation">
+                                <div id="menu_button">
+                                    <input type="checkbox" id="menu_checkbox" />
+                                    <label for="menu_checkbox" id="menu_label">
+                                    <div id="menu_text_bar"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </nav>
-                </div>
                 {/* Burger menu */}
-                <div className="col d-lg-none col-md-3">
+                {/* col-3 d-lg-none col-md-3 */}
+                {/* <div className="burger">
                     <div id="webapp_cover" data-toggle="collapse" 
                                     data-target="#navbarSupportedContent" 
                                     aria-controls="navbarSupportedContent" 
@@ -44,8 +58,7 @@ function NavBar() {
                             </label>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> */}
         </div>
     )
 }

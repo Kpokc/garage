@@ -5,6 +5,13 @@
 .nav-link {
     width: 100px;
     text-align: center;
+    float: right;
+}
+
+.burger {
+    position: absolute;
+    right: 25px;
+    top: 10px;
 }
 
 
@@ -15,7 +22,7 @@
     left: 0; */
     width: 39px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 4px;
     /* transform: translateY(-50%) scale(2); */
   }
   
@@ -133,4 +140,4 @@
     100% {
       transform: rotateZ(0);
     }
-}  
+}
