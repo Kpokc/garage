@@ -11,6 +11,7 @@ import Footer from '../Footer/footer';
 function App() {
   return (
     <div className="App container">
+      <TopGarageInfo />
       <NavBar />
       <Header />
       <HeaderAside />

@@ -1,0 +1,8 @@
+.addressLink {
+    text-decoration: none;
+    color: black;
+}
+
+.addressLink:hover {
+    color: black;
+}
