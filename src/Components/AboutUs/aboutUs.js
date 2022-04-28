@@ -5,7 +5,7 @@ import ourTeam from './img/ourteam.jpg'
 
 function AboutUs() {
     return (
-        <section id="ourteam">
+        <section id="aboutUs">
             <div className="row gx-5 align-items-center justify-content-center justify-content-lg-between">
 
                 <div className="col-12 col-lg-5">
