@@ -30,10 +30,7 @@ function Header() {
                 {/* 3D box */}
                 <div className="col-6">
                     <div className="mb-5 mb-lg-0 text-center text-lg-start box3d">
-                    {/* <iframe id='PreviewFrame3D' 
-                            src='http://www.3dcontentcentral.com/external-site-embed.aspx?format=3D&amp;catalogid=171&amp;modelid=700045&amp;width=250&amp;height=250&amp;edraw=true' 
-                            name='PreviewFrame3D' width='600' height='500' frameborder='0' scrolling='no' 
-                            allowfullscreen='allowfullscreen'></iframe> */}
+                        3D Picture
                     </div>
                 </div>
             </header>

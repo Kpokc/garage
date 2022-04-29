@@ -145,9 +145,16 @@
 
 /* // None bootstrap menu */
 
+#navbar {
+  position: sticky;
+	top: 0;
+}
+
 .nav {
   position: fixed;
-  right: 120px;
+  right: 0;
+  width: 100%;
+  top:10%
 }
 
 .ulNavToHide {
@@ -157,6 +164,7 @@
   color: #fff;
   z-index: 999;
   list-style-type: none;
+  margin: 0 auto;
 }
 
 .removeScrollBar {
@@ -166,10 +174,10 @@
 .nav-tgl {
   display: inline-block;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   z-index: 100;
-  right: 30px;
-  top: 30px;
+  right: 5px;
+  top: 20px;
   width: 70px;
   height: 70px;
   border: none;
@@ -225,7 +233,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   transition: all 500ms ease-in-out;
-  clip-path: circle(30px at calc(100% - 65px) 65px);
+  clip-path: circle(30px at calc(100% - 65px) 55px);
   visibility: hidden;
 }
 .menu.active .nav:before {
@@ -246,3 +254,12 @@
 .menu.active .nav-tgl > span:before {
   transform: rotate(45deg);
 }
+
+@media (max-width: 992px) { 
+  .nav-link {
+    width: 190px;
+    font-size: 32px;
+    color: #ffffff!important;
+  }
+}
+

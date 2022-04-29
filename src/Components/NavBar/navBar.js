@@ -2,66 +2,57 @@ import React, { Component } from "react";
 
 import './navBar.css'
 
+
 export default class NavBar extends Component {
 
     state = {
         menuOpen: false,
         navToShow: false,
         links: [
-            {id: 1, link: 'Home', ref: '#home', clickFunc: this.clickOnBurgerLink},
-            {id: 2, link: 'Services', ref: '#services', clickFunc: this.clickOnBurgerLink},
-            {id: 3, link: 'About Us', ref: '#aboutUs', clickFunc: this.clickOnBurgerLink},
-            {id: 4, link: 'Our Team', ref: '#ourTeam', clickFunc: this.clickOnBurgerLink},
-            {id: 5, link: 'Contact Us', ref: '#contactUs', clickFunc: this.clickOnBurgerLink},
+            {id: 1, link: 'Home', ref: '#home'},
+            {id: 2, link: 'Services', ref: '#services'},
+            {id: 3, link: 'About Us', ref: '#aboutUs'},
+            // {id: 4, link: 'Our Team', ref: '#ourTeam'},
+            {id: 4, link: 'Contact Us', ref: '#contactUs'},
         ]
     };
 
+    // Open / close burger menu (Burger button)
     clickOnMenuBtn = () => {
         this.setState({
             menuOpen: !this.state.menuOpen,
             navToShow: !this.state.navToShow
         });
-        // Add/remove Scrollbar and Scrollbar functionality
-        // if (!this.state.menuOpen) {
-        //     document.body.classList.add('removeScrollBar');
-        // } else {
-        //     document.body.classList.remove('removeScrollBar');
-        // }
     };
 
-    clickOnBurgerLink = () => {
-        console.log(333333333)
+    // Close burger menu (Menu and Burger menu links)
+    clickOnMenuLink = () => {
         this.setState({
             menuOpen: false,
             navToShow: false
         });
-        // Add/remove Scrollbar and Scrollbar functionality
-        // if (!this.state.menuOpen) {
-        //     document.body.classList.add('removeScrollBar');
-        // } else {
-        //     document.body.classList.remove('removeScrollBar');
-        // }
     };
 
     render() {
 
-        // List of links
+        // List of menu links
         const links = this.state.links
         const linksList = links.map((el) => {
             const { id, ref, link, clickFunc } = el;
             return (
                 <li className="nav-item active" key={id}>
-                    <a className="nav-link" href={ref} onClick={clickFunc}>{link}</a>
+                    <a className="nav-link" href={ref} onClick={this.clickOnMenuLink}>{link}</a>
                 </li>
             );
         });
 
         return (
-            <div className="row">
+            <div className="row" id="navbar">
                 {/* Top Menu */}
                 <nav className="bg-primary navbar navbar-expand-lg navbar-light shadow-sm">
                     <div className="container">
                         <a className="navbar-brand fw-bold" href="#page-top">Atomic Garage</a>
+                        <i className="fa-brands fa-facebook-square d-lg-none"></i>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
@@ -80,8 +71,8 @@ export default class NavBar extends Component {
                                 <span aria-hidden="true"></span>
                             </button>
                             <nav className="nav">
-                                {/* <!-- I don't care about the menu elements here so I will hide them--> */}
                                 <ul className={this.state.navToShow ? "ulNavToShow" : "ulNavToHide"}>
+                                    {/* Menu list */}
                                     {linksList}
                                 </ul>
                             </nav>
@@ -89,6 +80,6 @@ export default class NavBar extends Component {
                     </div>
                 </nav>
             </div>
-        )
+        );
     };
-}
+};
