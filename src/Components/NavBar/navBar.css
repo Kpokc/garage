@@ -233,9 +233,10 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   transition: all 500ms ease-in-out;
-  clip-path: circle(30px at calc(100% - 65px) 55px);
+  clip-path: circle(30px at calc(0% - 65px) -55px);
   visibility: hidden;
 }
+
 .menu.active .nav:before {
   visibility: visible;
   clip-path: circle(100%);

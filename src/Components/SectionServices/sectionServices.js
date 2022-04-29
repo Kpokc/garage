@@ -6,7 +6,7 @@ import serviceImage from './img/images.jpg'
 function SectionServices() {
     return (
         <section id="services">
-            <div className="row gx-5 align-items-center">
+            <div className="row align-items-center">
                 {/* Services garage provides */}
                 <div className="col-lg-8 order-lg-1 mb-5 mb-lg-0">
                     <h2>Services</h2>

@@ -12,9 +12,9 @@ function ContactUs() {
                         Google map
                     </div>
                 </div>
-                    <div className="col-6 px-5">
-                        Contact Us Form
-                    </div>
+                <div className="col-6 px-5">
+                    Contact Us Form
+                </div>
             </section>
         </div>
     );

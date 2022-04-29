@@ -10,7 +10,7 @@ function HeaderAside() {
                     "An intuitive solution to a common problem that we all face, wrapped up in a single app!"
                 </div>
                     <a className="navbar-brand fw-bold" href="#page-top">Atomic Garage</a>
-                </div>
+            </div>
         </aside>
     )
 }
